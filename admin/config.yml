@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: asolod/asolod.github.io # Path to your GitHub repository
+  branch: main # Branch to update
+
+media_folder: "images" # Where uploaded images will go
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
